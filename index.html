@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="./icons/icon.svg" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/hero-header.css" />
+    <link rel="stylesheet" href="./css/reservation.css" />
+    <title>Overcoffee</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="entire-logo">
+        <div class="logo letter-o"><span>O</span></div>
+        <div class="logo letter-c"><span>C</span></div>
+        <svg width="200px" height="200px" id="logo-background">
+          <polygon fill="#9c3535" points="0,0 200,0 100,200"></polygon>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <aside id="nav">
+        <nav>
+          <ul>
+            <li class="active">
+              <a href="#"><span></span></a>
+              <span>Home</span>
+            </li>
+            <li>
+              <a href="#"><span></span></a>
+              <span>Coffee</span>
+            </li>
+            <li>
+              <a href="#"><span></span></a>
+              <span>Desserts</span>
+            </li>
+            <li>
+              <a href="#"><span></span></a>
+              <span>Contacts</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <aside id="audio">
+        <audio autoplay>
+          <source src="./audio/way-down-we-go.mp3" type="audio/mp3"/>
+        </audio>
+        <button><img src="./icons/volume.svg" alt="volume" /></button>
+      </aside>
+      <section id="hero">
+        <div class="darker"></div>
+        <div class="container">
+          <div class="intro">
+            <h1>Overcoffee Loungezone</h1>
+            <h2>Place to get your hair down<br />Place to be yourself</h2>
+            <button id="intro-button">Get a chair</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/base.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

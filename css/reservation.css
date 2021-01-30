@@ -1,0 +1,121 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.5s linear;
+}
+
+.modal {
+    width: 25vw;
+    height: 60vh;
+    min-width: 400px;
+    min-height: 500px;
+    background: white;
+    top: -100vh;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    background: #000;
+    border: 5px solid rgb(77, 22, 52);
+    border-bottom-right-radius: 0;
+    transition: top 0.5s linear;
+}
+
+.modal-wrapper.active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-wrapper.active .modal {
+    top: 0;
+}
+
+.modal span {
+    display: block;
+    font-family: "Montserrat";
+    font-size: 6.4rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 60px;
+}
+
+.modal svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.modal circle:first-child {
+    fill: #310250;
+    animation: Reserve-fill 10s linear infinite alternate;
+}
+
+.modal circle:last-child {
+    fill: #3d053d;
+    animation: Reserve-fill 10s linear 3s infinite alternate;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 3rem;
+    margin: 6rem auto;
+}
+
+.modal form label {
+    font-family: "Montserrat Alternates";
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 6rem;
+}
+
+.modal form button {
+    margin: auto;
+    font-family: "Montserrat Alternates";
+    font-size: 2.8rem;
+    font-weight: 500;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    background: #772757;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.modal form button:hover {
+    background: #3f142e;
+    color: white;
+}
+
+/* Animation */
+
+@keyframes Reserve-fill {
+    25% {
+        fill: #741377;
+    }
+
+    50% {
+        fill: #310250;
+    }
+
+    75% {
+        fill: #3d053d;
+    }
+
+    100% {
+        fill: #843aa7;
+    }
+}
