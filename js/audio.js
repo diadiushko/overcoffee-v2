@@ -1,6 +1,6 @@
 const player = document.querySelector("#audio button");
 const audio = document.querySelector("#audio audio");
-
+audio.volume = .3;
 let step = 0;
 player.addEventListener("click", () => {
   if (step++ === 0) {

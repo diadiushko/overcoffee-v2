@@ -1,8 +1,9 @@
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&family=Montserrat:wght@400;500&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&family=Montserrat:wght@400;500&family=Staatliches&display=swap");
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -13,6 +14,14 @@ html {
 body {
     background: rgb(0, 0, 0);
     overflow-y: hidden;
+}
+
+button:focus {
+    box-shadow: 0 0 0 3px white;
+}
+
+a:focus span {
+    box-shadow: 0 0 0 2px grey;
 }
 
 /* Header */
@@ -110,6 +119,7 @@ nav li>span {
 li.active a span {
     box-shadow: 0 0 0 0.25rem white;
 }
+
 /* Audio */
 
 aside#audio {
@@ -122,9 +132,11 @@ aside#audio {
     height: 100%;
     padding: 1rem;
 }
+
 #audio audio {
     width: 150px;
 }
+
 #audio button {
     height: 50px;
     width: 50px;
@@ -133,6 +145,7 @@ aside#audio {
     background: black;
     border-radius: 50%;
 }
+
 /* Section 1: Hero */
 
 #hero {
@@ -156,7 +169,7 @@ aside#audio {
     font-size: 7.2rem;
 }
 
-.intro h1:after{
+.intro h1:after {
     content: "";
     display: block;
     width: 40rem;
@@ -166,6 +179,7 @@ aside#audio {
     font-weight: 500;
     border-radius: 3px;
 }
+
 .intro h2 {
     font-family: "Montserrat Alternates";
     font-size: 3.6rem;
@@ -181,9 +195,10 @@ aside#audio {
     font-weight: 500;
     padding: 1.5rem 7.5rem;
     margin: 5rem auto;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     cursor: pointer;
 }
+
 .intro button:hover {
     background: #3d0b2d;
     color: white;
@@ -196,10 +211,11 @@ aside#audio {
     width: 100%;
     height: 80%;
     background: black;
-    opacity: .98;
-    animation: Darker .7s linear 1.5s forwards;
+    opacity: 0.98;
+    animation: Darker 0.7s linear 1.5s forwards;
     display: block;
 }
+
 /* Animation */
 @keyframes Start-logo-o {
     to {

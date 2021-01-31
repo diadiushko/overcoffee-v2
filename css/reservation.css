@@ -15,7 +15,7 @@
 .modal {
     width: 25vw;
     height: 60vh;
-    min-width: 400px;
+    min-width: 420px;
     min-height: 500px;
     background: white;
     top: -100vh;
@@ -73,6 +73,7 @@
     padding: 1rem;
     font-size: 3rem;
     margin: 6rem auto;
+    max-width: 28rem;
 }
 
 .modal form label {
@@ -93,6 +94,7 @@
     background: #772757;
     cursor: pointer;
     transition: all 0.15s linear;
+    z-index: 5;
 }
 
 .modal form button:hover {
